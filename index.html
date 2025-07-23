@@ -1,74 +1,57 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>SmartBrick – Reserva de Tokens SBK</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
-        .container { max-width: 800px; margin: auto; padding: 30px; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); margin-top: 40px; border-radius: 8px; }
-        h1, h2 { color: #2c3e50; }
-        .highlight { color: #27ae60; font-weight: bold; }
-        label { display: block; margin-top: 15px; font-weight: bold; }
-        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
-        button { background: #27ae60; color: white; padding: 12px 25px; border: none; border-radius: 5px; font-size: 16px; margin-top: 20px; cursor: pointer; }
-        button:hover { background: #219150; }
-        .token-info { margin: 25px 0; }
-        footer { text-align: center; margin-top: 40px; color: #888; }
-    </style>
-    <script>
-        function enviarParaWhatsApp() {
-            const nome = document.getElementById("nome").value;
-            const email = document.getElementById("email").value;
-            const whatsapp = document.getElementById("whatsapp").value;
-            const quantidade = document.getElementById("quantidade").value;
-
-            const numero = "5531975302077";
-            const mensagem = `Olá, quero reservar tokens SBK.%0A%0ANome: ${nome}%0AE-mail: ${email}%0AWhatsApp: ${whatsapp}%0AQuantidade desejada: ${quantidade}`;
-            const url = `https://wa.me/${numero}?text=${mensagem}`;
-            window.open(url, '_blank');
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartBrick – Legacy Group</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Token SBK – SmartBrick</h1>
-        <p>Bem-vindo à pré-venda oficial do token <span class="highlight">SBK</span>, emitido pela Legacy Group e lastreado em imóveis reais:</p>
-        <ul>
-            <li>🏢 Apartamento – Centro de Contagem – R$ 200.000</li>
-            <li>🏨 Flat – Hotel San Diego – Pampulha – R$ 200.000</li>
-            <li>🏠 Apartamento 303 – Bairro Arcádia – R$ 190.000</li>
-            <li>🏠 Apartamento 301 – Bairro Arcádia – R$ 200.000</li>
-        </ul>
+  <header>
+    <div class="logo">LEGACY GROUP</div>
+    <nav>
+      <a href="#">Sharing Tokens</a>
+      <a href="#">Properties</a>
+      <a href="#">FAQ</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>SmartBrick</h1>
+      <p>Tokenizing Real Estate</p>
+      <p>Invest in tokenized properties with SBK, a blockchain-based asset backed by real estate.</p>
+      <button>Buy SBK Tokens</button>
+    </section>
 
-        <div class="token-info">
-            <p><strong>Token:</strong> SBK<br>
-            <strong>Rede:</strong> BNB Smart Chain (BEP20)<br>
-            <strong>Quantidade Inicial:</strong> 10.000 tokens<br>
-            <strong>Valor Inicial:</strong> R$ 100,00 por token</p>
+    <section class="properties">
+      <h2>Properties</h2>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="imovel1.jpg" alt="Centro de Contagem"/>
+          <h3>Apartamento – Centro de Contagem</h3>
+          <p>Valuation: R$ 200.000</p>
         </div>
-
-        <h2>Reservar Tokens</h2>
-        <p>Preencha os dados abaixo para iniciar sua reserva via WhatsApp:</p>
-
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" placeholder="Seu nome">
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="seu@email.com">
-
-        <label for="whatsapp">WhatsApp</label>
-        <input type="text" id="whatsapp" placeholder="(31) 99999-0000">
-
-        <label for="quantidade">Quantidade de tokens desejada</label>
-        <input type="number" id="quantidade" placeholder="Ex: 100">
-
-        <button onclick="enviarParaWhatsApp()">Reservar Tokens</button>
-
-        <footer>
-            Página oficial do projeto SmartBrick – powered by Legacy Group
-        </footer>
-    </div>
+        <div class="property-card">
+          <img src="imovel2.jpg" alt="Hotel San Diego"/>
+          <h3>Flat – Hotel San Diego – Pampulha</h3>
+          <p>Valuation: R$ 200.000</p>
+        </div>
+        <div class="property-card">
+          <img src="imovel3.jpg" alt="Apartamento 303"/>
+          <h3>Apartamento 303 – Bairro Arcádia</h3>
+          <p>Valuation: R$ 190.000</p>
+        </div>
+        <div class="property-card">
+          <img src="imovel4.jpg" alt="Apartamento 301"/>
+          <h3>Apartamento 301 – Bairro Arcádia</h3>
+          <p>Valuation: R$ 200.000</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Página oficial do projeto SmartBrick – powered by Legacy Group
+  </footer>
 </body>
 </html>
