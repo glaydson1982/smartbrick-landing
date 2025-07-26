@@ -1,1 +1,0 @@
-# smartbrick-landing
