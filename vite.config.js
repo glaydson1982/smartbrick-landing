@@ -1,3 +1,10 @@
+export default defineConfig({
+  base: '/', // ✅ Isso aqui garante que funcione com seu domínio próprio
+
+  plugins: [
+    // ...suas configurações existentes
+  ]
+})
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
